@@ -12,9 +12,12 @@ It did exactly what I wanted to do, but it wasnt in development. Since it had an
 Like I said above, this mod allows you to lock your funds in a career game. It also has the additional features of toppling the tech tree and also unlocking all the buildings.
 You can essentially do the same thing from the debug menu, but I found this more elegant, I figured some other people may aswell.
 
+##Known Bugs
+- There is a severe bug that causes the icon to multiply when switching scenes, will try to fix soon
+
 ##Future Plans
--Saving the pre-existing funds to a external file
--Better icon
+- Saving the pre-existing funds to a external file
+- Better icon
 
 ##Releases
 All releases are found here:
