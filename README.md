@@ -18,6 +18,7 @@ You can essentially do the same thing from the debug menu, but I found this more
 
 ##Releases
 All releases are found here:
+
 https://github.com/bananashavings/CareerManager/releases
 
 ## License
