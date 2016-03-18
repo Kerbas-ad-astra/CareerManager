@@ -19,7 +19,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using Astrotech;
+using ImportantUtilities;
 using CareerManagerUI;
 
 namespace CareerManager
@@ -398,7 +398,7 @@ namespace CareerManager
             RDController.OnRDTreeSpawn.Remove(RnDOpened);
             GameEvents.onGUIRnDComplexSpawn.Remove(RnDGUIOpened);
             GameEvents.onGUIRnDComplexDespawn.Remove(RnDGUIClosed);
-            CareerManagerGUI.Destroy();
+            CareerManagerGUI.OnDisable();
         }
 
         void OnGUI()

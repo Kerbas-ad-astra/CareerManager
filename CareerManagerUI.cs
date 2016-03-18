@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Astrotech;
+using ImportantUtilities;
 using CareerManager;
 
 namespace CareerManagerUI
@@ -163,14 +163,6 @@ namespace CareerManagerUI
             }
             GUILayout.EndVertical();
             GUI.DragWindow();
-        }
-
-        public void Destroy()
-        {
-            if (toolbarButton != null)
-            {
-                toolbarButton.Destroy();
-            }
         }
 
         public void OnDisable()
