@@ -21,6 +21,7 @@ To install CareerManager, simply drag and drop the entire folder found in the .z
 ##Future Plans
 ~~- Saving the pre-existing funds to a external file~~ Added in 1.0.0.0
 - Better icon
+- Utilize KSP skin
 
 ##Releases
 All releases are found here:
