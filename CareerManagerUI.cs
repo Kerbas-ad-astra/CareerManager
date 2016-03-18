@@ -14,12 +14,12 @@ namespace CareerManagerUI
         UNLOCKBUILDINGS
     }
 
-    public class CareerManagerUI
+    public class CareerManagerUI : MonoBehaviour
     {
         private bool guiActive = false;
         public bool useAppLauncher = true;
         private IButton toolbarButton = null;
-        private ApplicationLauncherButton appLauncherButton;
+        private ApplicationLauncherButton appLauncherButton = null;
 
         private int windowID;
         private Rect optionsWindowRect;
@@ -149,7 +149,7 @@ namespace CareerManagerUI
         {
             if (GuiActive)
             {
-                optionsWindowRect = GUILayout.Window(windowID, optionsWindowRect, Draw, "CareerLite Options", GUI.skin.window);
+                optionsWindowRect = GUILayout.Window(windowID, optionsWindowRect, Draw, "CareerManager Options", GUI.skin.window);
             }
         }
 
@@ -168,9 +168,22 @@ namespace CareerManagerUI
         public void Destroy()
         {
             if (toolbarButton != null)
+            {
                 toolbarButton.Destroy();
+            }
         }
 
+        public void OnDisable()
+        {
+            if (ToolbarManager.ToolbarAvailable) //if toolbar loaded, destroy button on leaving scene
+            {
+                toolbarButton.Destroy();
+            }
+            else
+            {
+                ApplicationLauncher.Instance.RemoveModApplication(appLauncherButton);
+            }
+        }
 
     }
 
