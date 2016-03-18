@@ -149,6 +149,7 @@ namespace CareerManagerUI
         {
             if (GuiActive)
             {
+                GUI.skin = HighLogic.Skin;
                 optionsWindowRect = GUILayout.Window(windowID, optionsWindowRect, Draw, "CareerManager Options", GUI.skin.window);
             }
         }

@@ -1,4 +1,23 @@
 CareerManager for Kerbal Space Program
+Orignially called "CareerLite" made by tivec (https://github.com/tivec/CareerLite)
+Now known as "CareerManager" made by bananashavings (https://github.com/bananashavings/CareerManager)
+
+-------------------------------------------------------------------------
+Licenced under the licensed under GPLv3. See the LICENSE file for details
+-------------------------------------------------------------------------
+
+
+1.0.1.0 03/17/2016
+- Changed to KSP skin
+- Fixed some formatting
+- Added license to the folder
+
+
+1.0.0.0 03/17/2016
+- Major bug fix
+- Button no longer multiplies
+- Fixed button not saving choices and shite
+- Enjoy!
 
 
 0.9.0.0 03/16/2016
